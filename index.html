@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header wow animate__animated animate__fadeInDown">
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <img src="img/logo.svg" alt="logo" class="header-logo">
+                <nav class="header-nav">
+                    <a href="#about">О компании</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#reasons">Почему мы</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+                <div class="header-contacts">
+                    <a href="tel:+77075777723" class="header-call">+7 707 577 77 23</a>
+                    <button class="header-btn" onclick="openModal()">
+                        Обратный звонок
+                    </button>
+                </div>
+                <div class="header__menu">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__mobile">
+                    <nav class="header__mobile-nav">
+                        <a href="#about" onclick="closeLink()">О компании</a>
+                        <a href="#services" onclick="closeLink()">Услуги</a>
+                        <a href="#reasons" onclick="closeLink()">Почему мы</a>
+                        <a href="#contacts" onclick="closeLink()">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="banner section-content" id="banner">
+            <div class="container-fluid">
+                <div class="banner-wrapper">
+                    <h1 class="title wow animate__animated animate__fadeInDown">
+                        Юридические решения <br>
+                        по вопросам недвижимости  <br>
+                        и жилищных проблем
+                    </h1>
+                    <button>
+                        Получить бесплатную консультацию    
+                    </button>
+                    <div class="banner-bottom">
+                        <div class="banner-item">
+                            <div class="banner-quant">
+                                5000+
+                            </div>
+                            <p>
+                                успешных<br>
+                                кейсов
+                            </p>
+                        </div>
+                        <div class="banner-item">
+                            <div class="banner-quant">
+                                15
+                            </div>
+                            <p>
+                                лет на рынке<br>
+                                юридических услуг 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-hidden">
+                <img src="img/banner.png" alt="">
+                <button>
+                    Получить бесплатную консультацию    
+                </button>
+            </div>
+        </section>
+        <section class="about section-content" id="about">
+            <div class="container-fluid">
+                <div class="about-wrapper">
+                    <div class="about-text">
+                        <h1 class="title wow animate__animated animate__fadeInDown">
+                            О компании
+                        </h1>
+                        <p>
+                            Обратившись к нам, вы получите экспертов в области юридических услуг в сфере недвижимости с многолетним стажем работы. Командную работу ТОО «Алматыжеркурылыс» высоко отметил Союз Национальных Бизнес Рейтингов и присвоил звание «Лидер Года 2017». 
+                        </p>
+                        <br>
+                        <p>
+                            Мы продолжаем совершенствовать свой уровень, чтобы вы получали только высококвалифицированные услуги по узаконению строительства, юридическому сопровождению сделок и представительству в суде.
+                        </p>
+                    </div>
+                    <div class="about-photo">
+                        <img src="img/home.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services section-content" id="services">
+            <div class="container-fluid">
+                <div class="services-wrapper">
+                    <div class="services-content">
+                        <div class="services-img">
+                            <h1 class="title">
+                                Услуги
+                            </h1>
+                            <img src="img/group.png" alt="">
+                        </div>
+                        
+                        <div class="services-info">
+                            <div class="services-item">
+                                <img src="img/s1.svg" alt="">
+                                <div class="services-text">
+                                    <h3 class=" wow animate__animated animate__fadeInDown">Узаконение строительства</h3>
+                                    <p>
+                                        Не рискуйте получить штраф (5-25 МРП) по статье №238 Кодекса «Об административных правонарушениях».  Узаконивание с нашей командой происходит качественно и быстро. С нами все перепланировки и возведенные строения на частной территории пройдут ускоренную проверку в отделе архитектуры и градостроительства вашего города. Таким образом, вы получите юридический статус объекта недвижимости и защитите себя от непредвиденных финансовых расходов.
+                                    </p>
+                                    <button onclick="openModal()">Получить консультацию</button>
+                                </div>
+                            </div>
+                            <div class="services-item">
+                                <img src="img/s1.svg" alt="">
+                                <div class="services-text">
+                                    <h3 class=" wow animate__animated animate__fadeInUp">Сопровождение сделок</h3>
+                                    <p>
+                                        Наши специалисты помогут составить юридически обоснованный и безопасный договор купли-продажи недвижимости. Полностью проверят право собственности на недвижимость, обеспечат соблюдение всех требований закона и защиту интересов клиента. Наша команда проведет сделку в соответствии с законом и максимально сократит всевозможные правовые проблемы в будущем.
+                                    </p>
+                                    <button onclick="openModal()">Получить консультацию</button>
+                                </div>
+                            </div>
+                            <div class="services-item">
+                                <img src="img/s1.svg" alt="">
+                                <div class="services-text">
+                                    <h3 class=" wow animate__animated animate__fadeInDown">Представительство в суде</h3>
+                                    <p>
+                                        Юристы нашей компании помогут в суде при возникновении проблем с недвижимостью или посоветуют правильную стратегию и тактику поведения во время судебных процессов. Мы обеспечим защиту прав, представим ваши интересы в суде и окажем всю необходимую правовую помощь.
+                                    </p>
+                                    <button onclick="openModal()">Получить консультацию</button>
+                                </div>
+                            </div>
+                            <div class="services-item">
+                                <img src="img/s1.svg" alt="">
+                                <div class="services-text">
+                                    <h3 class=" wow animate__animated animate__fadeInUp">Юридическое сопровождение</h3>
+                                    <p>
+                                        Наш консультант поможет соблюсти законодательство и предотвратить всевозможные проблемы с регистрацией недвижимости. Мы подготовим полное оформление документов на недвижимое имущество, а также поможем с узакониванием, разрешением на строительство и продлением документации.
+                                    </p>
+                                    <button onclick="openModal()">Получить консультацию</button>
+                                </div>
+                            </div>
+                            <div class="services-item">
+                                <img src="img/s1.svg" alt="">
+                                <div class="services-text">
+                                    <h3 class=" wow animate__animated animate__fadeInDown">Изыскательные виды работ</h3>
+                                    <p>
+                                        С нашей помощью вы получите полную информацию о свойствах и особенностях факторов, которые могут повлиять на безопасность, надежность и экономичность строительства. Мы предлагаем следующие услуги: геологию и гидрогеологию, исполнительную и топологическую съёмки, акты посадки зданий, восстановление границ участка, ситуационные схемы и план-схемы земельных участков.
+                                    </p>
+                                    <button onclick="openModal()">Получить консультацию</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="title hidden">
+                            Услуги
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reasons section-content" id="reasons">
+            <div class="container-fluid">
+                <div class="reasons-wrapper">
+                    <h1 class="title wow animate__animated animate__fadeInDown">Почему нас выбирают?</h1>
+                    <div class="reasons-item reasons-item__top">
+                        <div class="reasons-top">
+                            <img src="img/sparkle.svg" alt="">
+                            <h3>С нами выгодно</h3>
+                        </div>
+                        <p>С нами можно получить сразу несколько услуг: разработать<br> проект с нуля, быстро пройти экспертизу технического проекта<br> и подать документы для узаконивания. Бонус: при оплате проектирования и технического проекта подача документов бесплатна!</p>
+                    </div>
+                    <div class="reasons-inner">
+                        <div class="reasons-item">
+                            <div class="reasons-top">
+                                <img src="img/sparkle.svg" alt="">
+                                <h3>С нами надежно</h3>
+                            </div>
+                            <p>
+                                В нашей команде надёжные
+                                специалисты с многолетним стажем работы в сфере планирования и недвижимости.
+                            </p>
+                        </div>
+                        <div class="reasons-item">
+                            <div class="reasons-top">
+                                <img src="img/sparkle.svg" alt="">
+                                <h3>С нами быстро</h3>
+                            </div>
+                            <p>Наши специалисты — мастера своего дела и точно знают, как правильно и быстро оформить все необходимые документы.</p>
+                        </div>
+                        <div class="reasons-item">
+                            <div class="reasons-top">
+                                <img src="img/sparkle.svg" alt="">
+                                <h3>С нами легко</h3>
+                            </div>
+                            <p>У нас можно сделать сразу три дела: оформить заказ, сдать документы и получить уже готовые обратно.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="consult" id="consult">
+            <div class="container-fluid">
+                <div class="consult-wrapper">
+                    <h1 class="title wow animate__animated animate__fadeInDown">
+                        Бесплатная консультация
+                    </h1>
+                    <p class=" wow animate__animated animate__fadeInDown">
+                        Оставьте заявку на консультацию, а наш специалист свяжется с вами в<br> ближайшее время и ответит на все интересующие вопросы. 
+                    </p>
+                    <form action="#" class="consult-form">
+                        <div class="consult-form__inputs">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Ваш телефон">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение (необязательно)"></textarea>
+                        <button>Получить <span>бесплатную </span> консультацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="contacts-title title wow animate__animated animate__fadeInDown">
+                            Контакты
+                        </p>
+                        <span>
+                            <img src="img/location.svg" alt="">
+                            РК, г. Алматы, ул. Толе Би, офис 104.
+                        </span>
+                        <div class="contacts-wrapper">
+                            <a href="tel:+77075777723">
+                                <img src="img/tel.svg" alt="">
+                                +7 707 577 77 23
+                            </a>
+                            <a href="https://wa.me/+77075777723">
+                                <img src="img/wh.svg" alt="">
+                                +7 707 577 77 23
+                            </a>
+                            <a href="https://t.me/+77075777723">
+                                <img src="img/tg.svg" alt="">
+                                +7 707 577 77 23
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ps-4">
+                        <div class="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-wrapper">
+                <img src="img/logo.svg" alt="" class="footer-logo">
+                <div class="footer-nav">
+                    <a href="#about">О компании</a>
+                    <a href="#reasons">Почему мы</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <div class="footer-call">
+                    <a href="tel:+77055777723" class="footer-tel">+7 705 577 77 23</a>
+                    <button class="footer-fdb" onclick="openModal()">
+                        Обратный звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-top">
+        <img src="img/arrow-up.svg" alt="">
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="material-symbols-outlined modal-close" onclick="closeModal()">
+                close
+            </span>
+            <div class="modal-inner">
+                <form action="#" class="modal-form">
+                    <div class="modal-inputs">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Ваш номер телефона">
+                    </div>
+                    <input type="text" placeholder="Сообщение (необязательно)">
+                    <button class="modal-btn">Получить <span>бесплатную </span> консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow-init.js"></script>
+</body>
+
+</html>
